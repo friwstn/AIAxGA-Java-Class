@@ -1,0 +1,13 @@
+package NewJava;
+
+public class Student extends Person{
+	int NumCourses;
+	String Courses;
+	int Grades;
+	
+	public Student(int numCourses, String courses, int grades) {
+		NumCourses = numCourses;
+		Courses = courses;
+		Grades = grades;
+	}
+}

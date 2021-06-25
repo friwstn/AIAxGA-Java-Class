@@ -1,0 +1,8 @@
+inheritance :
+	sebuah konsep dimana sebuah kelas dapat menurunkan property dan methodnya kepada kelas yang lain. 
+Polymorphism:
+	seperti namanya, poly	artinya banyak sehingga dapat dikatakan kalau polymorphism itu adalah kelas yang memiliki banyak bentuk, tipe data dan parameternya berbeda.
+Abstraction:
+	suatu cara untuk menyembunyikan suatu detail informasi, dan hanya menyampaikan yang esensial atau cukup perlu diketahui oleh user saja.
+Encapsulation:
+	seperti namanya kapsul, ini adalah suatu cara untuk menyembunyikan data dari user.

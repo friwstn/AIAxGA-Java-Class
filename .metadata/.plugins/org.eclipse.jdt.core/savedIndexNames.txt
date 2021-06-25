@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/frig/Documents/AIAxGA/Assignment/Assignment1/.metadata/.plugins/org.eclipse.jdt.core
+836518461.index
+314619299.index
+3195985351.index
+2103511689.index
+2195047379.index
+2705961802.index
+495237629.index

@@ -1,0 +1,9 @@
+package FifthTry;
+
+public class Student{
+	int numCourses = 0;
+	String[] courses = new String[] {"Math", "Biology", "Physics", "Chemist"};
+	int[] grades = new int[] {90, 80, 80, 80};
+	
+	
+}

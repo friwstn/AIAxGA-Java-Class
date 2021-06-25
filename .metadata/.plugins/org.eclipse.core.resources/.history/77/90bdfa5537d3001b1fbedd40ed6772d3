@@ -1,0 +1,28 @@
+package TugasJavaNew;
+
+import java.util.Scanner;
+
+public class Person {
+	public void display_menu() {
+		System.out.println("Choose based on your role: 1 for student, 2 for teacher");
+		System.out.println("Selection ");
+	}
+	
+	public Person() {
+		Scanner in = new Scanner (System.in);
+		
+	    display_menu();
+	    switch ( in.nextInt() ) {
+	      case 1:
+	        System.out.println ( "You picked option 1" );
+	        break;
+	      case 2:
+	        System.out.println ( "You picked option 2" );
+	        break;
+	      default:
+	        System.err.println ( "Unrecognized option" );
+	        break;
+	    }
+	  }
+
+}

@@ -1,0 +1,12 @@
+package TugasJavaNew;
+
+import java.util.Scanner;
+
+public class mainDatabase {
+
+	public static void main(String[] args) {
+		student student1 = new student();
+		student1.courseGrades();
+	}
+
+}

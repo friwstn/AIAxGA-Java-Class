@@ -1,0 +1,12 @@
+package NewJava;
+
+public class Person {
+	protected String Name;
+	protected String Address;
+	
+	public Person(String name, String address) {
+		Name = name;
+		Address = address;
+	}
+	
+}

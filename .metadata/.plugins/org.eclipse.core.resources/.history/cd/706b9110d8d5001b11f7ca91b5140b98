@@ -1,0 +1,103 @@
+package SchoolManagement;
+
+import java.util.*;
+
+public class AppsProgram {
+	public static void main(String[] args) {
+		Person student = new Student();
+		student.setName ("wawan");
+		student.setAddress ("JJ");
+		System.out.println(student.getName() + student.getAddress());
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		int Selection;
+//		boolean exit = false;
+//		while(!exit)
+//		{
+//			System.out.println("Who are you?");
+//			System.out.println("1. Student");
+//			System.out.println("2. Teacher");
+//			System.out.println("3. if you are none above, Get out");
+//			selection = sc.nextInt()
+//					switch(selection)
+//					{
+//					case 1 :
+//			            System.out.println("Enter studentName ");
+//			            sc = new Scanner(System.in);
+//			            String studentName= sc.nextLine();
+//			            Student studentInfo = student.createStudent(studentName);
+//			            System.out.println("Do you want to continue? Type Yes / No");
+//			            Scanner sc1 = new Scanner(System.in);
+//			            if (sc1.next().equalsIgnoreCase("no"))
+//			                    exit = true;
+//			                break;
+//
+//			            case 2 :
+//
+//			                break;
+//			            case 3 :
+//					}
+		}
+	}
+
+
+class Person {
+//	private int id;
+	protected static String name;
+	protected static String address;
+//	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String toString() {
+		return name + " " + address;
+	}
+}
+
+class Student extends Person {
+	int numCourses = 0;
+	ArrayList<String> courses = new ArrayList<String>();
+	ArrayList<Integer> grades = new ArrayList<Integer>();
+
+	public Student() {
+		super();
+	}
+
+	public String toString() {
+		return "Hallo" + name + " " + address;
+	}
+	
+	void addCourseGrade(ArrayList<String> course, ArrayList<Integer> grades) {
+		this.courses = course;
+		this.grades = grades;
+	}
+	
+	public void printGrades() {
+		
+		
+	}
+	
+	public double getAverageGrade() {
+		
+	}
+
+}
+
+class Teacher extends Person {
+	int numCourses;
+	String[] courses;
+}

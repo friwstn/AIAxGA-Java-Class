@@ -1,0 +1,82 @@
+package SchoolManagement;
+
+import java.util.*;
+
+public class AppsProgram {
+	public static void main(String[] args) {
+		Person student = new Student();
+		student.setName("wawan");
+		student.setAddress("JJ");
+		System.out.println(student.getName() + student.getAddress());
+		((Student) student).addCourseGrade("BB", 9);
+		((Student) student).printGrades("zz", 9);
+
+	}
+}
+
+class Person {
+//	private int id;
+	protected static String name;
+	protected static String address;
+
+//	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String toString() {
+		return name + " " + address;
+	}
+}
+
+class Student extends Person {
+	int numCourses = 0;
+//	String courses;
+//	int grades;
+	String courses;
+	int grades;
+
+	public Student() {
+		super();
+	}
+
+	public String toString() {
+		return "Hallo" + name + " " + address;
+	}
+
+	void addCourseGrade(String courses, int grades) {
+		this.courses = courses;
+		this.grades = grades;
+	}
+
+	public void printGrades(String courses, int grades) {
+		System.out.println(courses + " : " + grades);
+				}
+
+//	public double getAverageGrade() {
+//		int gradeLength = grades.size();
+//		Double gradeTotal = 0.0;
+//		for (Double grade : grades) {
+//			gradeTotal += grades;
+//		}
+//		return gradeTotal / gradeLEngth;
+//	}
+
+}
+
+class Teacher extends Person {
+	int numCourses;
+	String[] courses;
+}
